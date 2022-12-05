@@ -5,40 +5,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Added a specific title related to the context and content of the page -->
+  <title>China Pickering // Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
+  <!-- Even though there is 1 main header, I've added header id to be more specific -->
+  <header class="header" header id="main_header">
+    <h1>China Pickering</h1>
+    <nav id="navBar">
+      <!-- Created class for links so that they can be changed in CSS -->
+      <ul class="nav_links">
+        <li>
+          <!-- Used # hyperlinks so that it can direct to the part of the page -->
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
+<!-- Banner at top of the page, make sure to use background image  -->
+  <section class="banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>Portfolio</h2>
     </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
+    <section class="page_section">
+      <div class="subheading" id="about">
       <h2>About Me</h2>
+      <div>
+    </section>
+      <!-- Used <br> to format the text in p into 2 paragraphs -->
+    <section class="right_side">
+      <div id="about_info">
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id neque. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Felis imperdiet proin fermentum leo. Id nibh tortor id aliquet lectus proin nibh. Proin sed libero enim sed faucibus turpis in. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Ut etiam sit amet nisl purus in mollis. Hac habitasse platea dictumst vestibulum. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Bibendum at varius vel pharetra vel. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Et leo duis ut diam quam nulla porttitor. Orci eu lobortis elementum nibh tellus. Sem viverra aliquet eget sit amet tellus. Euismod nisi porta lorem mollis aliquam ut porttitor. Morbi tincidunt augue interdum velit euismod in pellentesque massa.<br><br>
+        Mi ipsum faucibus vitae aliquet nec ullamcorper. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Vitae nunc sed velit dignissim sodales ut eu sem integer. Eget nunc lobortis mattis aliquam faucibus purus in massa. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Ultrices dui sapien eget mi proin. Ut sem viverra aliquet eget sit. Dui ut ornare lectus sit amet est placerat in. Dui accumsan sit amet nulla facilisi morbi tempus iaculis. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Ullamcorper morbi tincidunt ornare massa. Sit amet aliquam id diam maecenas. At elementum eu facilisis sed odio morbi quis. Nunc mattis enim ut tellus elementum sagittis vitae et leo. Id faucibus nisl tincidunt eget nullam. Mauris nunc congue nisi vitae suscipit. Blandit cursus risus at ultrices mi tempus. Montes nascetur ridiculus mus mauris vitae ultricies. Eu nisl nunc mi ipsum faucibus vitae aliquet.</p>
+      </div>
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+    <div class="subheading" id="work">
       <h2>Work</h2>
+    </div>
+    <section class="right_side">
+      <article id="horiseon" class="applications">
+      <div class="title">
+        <a href="https://chinapicke.github.io/first_challenge/" target="_blank">Horiseon</a>
+      </div>
+      <h3>HTML/CSS</h3>
+      </article>
+      <article id="pre_work" class="applications">
+      <div class="title">
+        <a href="https://chinapicke.github.io/prework-study/" target="_blank">Prework Study Guide</a>
+      </div>
+      <h3>HTML/CSS/Javascript</h3>
+      </article>
+      <article id="calculator" class="applications">
+      <div class="title">
+        <!-- Did not insert HTML links for the last 3 application as I don't have any further repositories to add to porfolio -->
+        <a href="" target="_blank">Calculator</a>
+      </div>
+      <h3>Webpage calculator</h3>
+      </article>
+      <article id="shop" class="applications">
+      <div class="title">
+        <a href="" target="_blank">Funiture Shop</a>
+      </div>
+      <h3>HTML/CSS</h3>
+      </article>
+      <article id="game" class="applications">
+      <div class="title">
+        <a href="" target="_blank">Archived Game Database</a>
+      </div>
+      <h3>HTML/CSS/Javascript</h3>
+      </article>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <article class="page-section contact">
+      <div class="subheading" id="contact">
       <h2>Contact Me</h2>
+      </div>
+    <section class="right_side">
+      <ul class="information">
+        <li>
+          555-555-555-
+        </li>
+        <li>
+          <!-- Set all hyperlink at the bottom of page to open in another window using target tag. I have not attached my own twitter or LinkedIn account but I have attached the sign in page to both -->
+          <a href="mailto:chinapickering@hotmail.co.uk" target="_blank">chinapickering@hotmail.co.uk</a>
+        </li>
+        <li>
+          <a href="https://github.com/chinapicke" targets="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/home" targets="_blank"> LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" targets="_blank">Twitter</a>
+        </li>
+      </ul>
     </section>
+    </article>
   </main>
 </body>
 

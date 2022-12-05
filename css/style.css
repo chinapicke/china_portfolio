@@ -5,8 +5,167 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  font-family: 'Arial, Helvetica, sans-serif';
+  background-color: #AAB7B8;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.header h1{
+  display: flex;
+  font-size: 48px;
+  background-color: skyblue;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: end;
+}
+
+#navbar{
+  padding-top: 15px;
+  margin-right: 20px;   
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 25px;
+}
+
+/* Used different colours for navigation bar hyperlinks dependent on whether thye have been hovered over to make the page more interactive for the user */
+.nav_links li a:link{
+  color: skyblue;
+  text-decoration: underline;
+}
+.nav_links li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.banner{
+  display: flex;
+  justify-content:flex-end;
+  align-items: flex-end;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner h2{
+  display: inline;
+  justify-content:center;
+  align-items: center;
+  height: 200px;
+  color: white;
+  background-color: skyblue;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+}
+
+.subheading{
+  display: grid;
+  height: 10vh;
+  grid-template-rows: 40% 20% 40%;
+  grid-template-columns: 70% ;
+  grid-template-areas:
+  "about"
+  "work"
+  "contact";
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: top 5cm;
+}
+
+#about{
+  grid-area: about;
+}
+#work{
+  grid-area: work;
+}
+#contact{
+  grid-area: contact;
+}
+
+.right_side{
+  display: grid;
+  height: 30vh;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 70%;
+  grid-template-areas: 
+  "info"
+  "applications"
+  "contact";
+  justify-content: flex-end;
+ 
+}
+
+#about_info{
+  grid-area: info;
+}
+
+.applications{
+  margin: 0px 5%;
+  grid-area: applications;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "horiseon horiseon"
+  "prework  calculator"
+  "shop     game";
+  justify-content: flex-start;
+}
+
+.information{
+  grid-area: contact;
+}
+
+#horiseon{
+  grid-area: horiseon;
+  background-image: url(../images/horiseon.png);
+}
+
+.information{
+  grid-area: contact;
+}
+
+#pre-work{
+  grid-area: prework;
+  background-image: url(../images/prework.png);
+}
+
+#calculator{
+  grid-area: calculator;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#shop{
+  grid-area: shop;
+  background-image: url(../images/shop.png);
+}
+
+#game{
+  grid-area: game;
+  background-image: url(../images/02-portfolio-3.jpg);
 }
 
 h1,
