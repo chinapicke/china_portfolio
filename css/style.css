@@ -199,6 +199,11 @@ body {
   border: 5px solid lightblue;
   position: relative;
   background-image: url(../images/horiseon.png);
+  opacity: 60%;
+}
+
+.horiseon:hover{
+  opacity: 100%;
 }
 
 .prework{
@@ -206,25 +211,35 @@ body {
   border: 5px solid lightblue;
   position:relative;
   background-image: url(../images/prework.png);
+  opacity: 60%;
+}
+.prework:hover{
+  opacity: 100%;
 }
 .calculator{
   grid-area: calculator;
   border: 5px solid lightblue;
   position:relative;
   background-image: url(../images/02-portfolio-2.jpg);
+  opacity: 60%;
 }
+
 .shop{
   grid-area:shop;
   border: 5px solid lightblue;
   position:relative;
   background-image: url(../images/shop.png);
+  opacity:60%;
 }
+
 .game{
   grid-area: game;
   border: 5px solid lightblue;
   position:relative;
   background-image: url(../images/02-portfolio-3.jpg);
+  opacity: 60%;
 }
+
 /* Used background so that it would take up the whole aspect og each grid item that it is designated to */
 #photos{
   background-position:left;
@@ -232,6 +247,10 @@ body {
   background-repeat: no-repeat;
   margin: 5px;
   cursor: pointer;
+}
+
+#photos:hover{
+  opacity: 100%;
 }
 
 /* Seperated h3 and h4 due to differences in padding bottom and font size */
@@ -344,5 +363,4 @@ p {
     padding-left: 30px;
   }
 }
- 
  
